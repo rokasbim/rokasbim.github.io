@@ -369,50 +369,139 @@ background:
   .nav {
     position: static;
     background: #111827;
-    padding: 16px 24px;
+    padding: 16px 20px;
     flex-direction: column;
-    gap: 12px;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .nav-logo {
+    font-size: 18px;
   }
 
   .nav-links {
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 
   .hero {
-    padding: 80px 24px 56px;
-    min-height: 70vh;
+    min-height: 78vh;
+    padding: 80px 20px 56px;
+    align-items: flex-end;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 42px;
+    line-height: 1.05;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    text-align: center;
+    width: 100%;
+  }
+
+  .description {
+    margin: 56px auto 0;
+    padding: 0 20px;
+  }
+
+  .description h2 {
+    font-size: 28px;
   }
 
   .maps {
-    padding: 56px 24px;
-    gap: 56px;
+    padding: 56px 20px;
+    gap: 32px;
   }
 
   .map-section,
   .map-section--reverse {
     grid-template-columns: 1fr;
     direction: ltr;
+    padding: 22px;
+    gap: 22px;
+  }
+
+  .map-section--reverse > * {
+    direction: ltr;
+  }
+
+  .map-text h2 {
+    font-size: 24px;
+  }
+
+  .map-text p {
+    font-size: 15px;
+  }
+
+  .map-image {
+    height: 230px;
+    order: -1;
+  }
+
+  .map-embed {
+    margin: 32px auto 56px;
+    padding: 0 16px;
+  }
+
+  .map-embed iframe {
+    min-height: 520px;
+    border-radius: 12px;
+  }
+
+  .page-header {
+    padding: 36px 20px;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
   }
 
   .contact {
-    padding: 0 24px;
+    padding: 0 20px;
+    margin-bottom: 56px;
   }
 
   .contact-card {
-    padding: 36px 28px;
+    padding: 32px 24px;
+  }
+
+  .contact h2 {
+    font-size: 28px;
   }
 
   .footer {
-    padding: 40px 24px 24px;
+    padding: 40px 20px 24px;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .footer-col ul {
+    gap: 6px;
   }
 }
